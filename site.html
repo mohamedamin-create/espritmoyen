@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esprit Calcule Moyenne 1A</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./source/espritv2.jpg" id="logoid">
+        </div>
+        <h1>Calculer Les Moyennes De 1A</h1>
+        <label for="choisir_semester">Sélectionner Semestre:</label>
+        <select id="choisir_semester" onchange="choisir_semester()">
+            <option value="">Choisir Semestre</option>
+            <option value="1">Semestre 1</option>
+            <option value="2">Semestre 2</option>
+        </select>
+
+        <form id="semester1" class="choisir_semester" style="display: none;">
+            <!-- ALGO 1 -->
+            <h2>ALGO 1</h2>
+            <label for="algo1cc">CC:</label>
+            <input type="number" id="algo1cc">
+            <label for="algo1exam">Exam:</label>
+            <input type="number" id="algo1exam">
+
+            <!-- APP0 -->
+            <h2>APP0</h2>
+            <label for="app0">Note APP0:</label>
+            <input type="number" id="app0">
+
+            <!-- FRANCAIS -->
+            <h2>FRANCAIS</h2>
+            <label for="frcc">CC:</label>
+            <input type="number" id="frcc">
+            <label for="frtp">TP:</label>
+            <input type="number" id="frtp">
+            <label for="frexam">Exam:</label>
+            <input type="number" id="frexam">
+
+            <!-- INFOGRAPHIE -->
+            <h2>INFOGRAPHIE</h2>
+            <label for="infographie">Note INFOGRAPHIE:</label>
+            <input type="number" id="infographie">
+
+            <!-- MATH 1 -->
+            <h2>MATH 1</h2>
+            <label for="math1cc">CC:</label>
+            <input type="number" id="math1cc">
+            <label for="math1tp">TP:</label>
+            <input type="number" id="math1tp">
+            <label for="math1exam">Exam:</label>
+            <input type="number" id="math1exam">
+
+            <!-- PROG 1 -->
+            <h2>PROG 1</h2>
+            <label for="prog1cc">CC:</label>
+            <input type="number" id="prog1cc">
+            <label for="prog1exam">Exam:</label>
+            <input type="number" id="prog1exam">
+
+            <!-- RESEAU -->
+            <h2>RESEAU</h2>
+            <label for="reseaucc">CC:</label>
+            <input type="number" id="reseaucc">
+            <label for="reseauexam">Exam:</label>
+            <input type="number" id="reseauexam">
+            <button type="button" onclick="calculateScore(1)">Calculer</button>
+        </form>
+
+        <form id="semester2" class="choisir_semester" style="display:none;">
+            <!-- ALGO 2 -->
+            <h2>ALGO 2</h2>
+            <label for="algo2cc">CC:</label>
+            <input type="number" id="algo2cc">
+            <label for="algo2exam">Exam:</label>
+            <input type="number" id="algo2exam">
+
+            <!-- ANGLAIS -->
+            <h2>ANGLAIS</h2>
+            <label for="angcc">CC:</label>
+            <input type="number" id="angcc">
+            <label for="angexam">Exam:</label>
+            <input type="number" id="angexam">
+
+            <!-- ELECTRONIQUE -->
+            <h2>ELECTRONIQUE</h2>
+            <label for="electrocc">CC:</label>
+            <input type="number" id="electrocc">
+            <label for="electroexam">Exam:</label>
+            <input type="number" id="electroexam">
+
+            <!-- MATH 2 -->
+            <h2>MATH 2</h2>
+            <label for="math2cc">CC:</label>
+            <input type="number" id="math2cc">
+            <label for="math2tp">TP:</label>
+            <input type="number" id="math2tp">
+            <label for="math2exam">Exam:</label>
+            <input type="number" id="math2exam">
+
+            <!-- PROG 2 -->
+            <h2>PROG 2</h2>
+            <label for="prog2cc">CC:</label>
+            <input type="number" id="prog2cc">
+            <label for="prog2tp">TP:</label>
+            <input type="number" id="prog2tp">
+            <label for="prog2exam">Exam:</label>
+            <input type="number" id="prog2exam">
+
+            <!-- PROJET -->
+            <h2>PROJET</h2>
+            <label for="projet">Note PROJET:</label>
+            <input type="number" id="projet">
+            <button type="button" onclick="calculateScore(2)">Calculer</button>
+        </form>
+
+        <div id="affichage"></div>
+    </div>
+    <div class="footer">
+        <p id="deve">
+            <a href="mailto:mohamedamin.kadri@esprit.tn">
+            <img src="source/email.png" id="mail" alt="Email icon" />
+        </a>
+            <a href="https://facebook.com/aminkadri200">
+            <img src="source/fb.png" id="fb" alt="facebook" />
+        </a>
+            
+            Ce Site développé par Mohamed Amine Kadri 💕
+        </p>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>

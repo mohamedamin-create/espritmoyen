@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0592fe;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8ee67c;
+}
+
+#affichage {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+}
+
+#logo-image {
+    width: 100px;
+    height: auto;
+
+}
+
+#choisir_semester {
+    width: 100%;
+    padding: 8px;
+}
+
+#deve {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input[type="number"] {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    input[type="number"] {
+        padding: 6px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+
+    #choisir_semester {
+        font-size: 0.9em; 
+    }
+}
+#mail {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+#fb{
+    width: 27px;
+    height: 40px;
+    margin-right: 5px;
+}
