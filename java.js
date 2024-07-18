@@ -53,7 +53,7 @@ if(![algo1cc,algo1exam,app0,frcc,frtp,frexam,infographie,math1cc,math1exam,math1
                 aff='Tu dois travailler plus';
             }
        affichage_bonde = `
-            <p>Your total score for Semester 1 is: ${score_final.toFixed(2)}</p>
+            <p>Votre Moyenne Semester 1 : ${score_final.toFixed(2)}</p>
      <p>Commentaire:${aff}</p>
         `;
     } else if (semester == 2) {
@@ -97,7 +97,7 @@ if(![algo1cc,algo1exam,app0,frcc,frtp,frexam,infographie,math1cc,math1exam,math1
         }
 
         affichage_bonde = `
-            <p>Your total score for Semester 2 is: ${score_final.toFixed(2)}</p>
+            <p>Votre Moyenne Semester 2 : ${score_final.toFixed(2)}</p>
             <p>Commentaire:${aff}</p>
         `;
     }
